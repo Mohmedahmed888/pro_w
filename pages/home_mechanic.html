@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mechanic Home</title>
+<link rel="stylesheet" href="home_mechanic.css">
+</head>
+<body>
+
+<nav>
+  <button class="nav-btn active" data-tab="main">Main</button>
+  <button class="nav-btn" data-tab="accepted">Accepted Requests</button>
+  <button class="nav-btn" data-tab="profile">Profile</button>
+</nav>
+
+<div id="content">
+  <div class="tab" id="main-tab">
+    <h2>Incoming Requests</h2>
+    <div id="requests-list"></div>
+  </div>
+
+  <div class="tab" id="accepted-tab" style="display:none;">
+    <h2>Accepted Requests</h2>
+    <div id="accepted-list"></div>
+  </div>
+
+  <div class="tab" id="profile-tab" style="display:none;">
+    <h2>Profile</h2>
+    <div id="profile-form"></div>
+  </div>
+</div>
+
+<script src="home_mechanic.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,75 @@
+/* ====== GEN-Z REGISTER PAGE ====== */
+
+body {
+  margin: 0;
+  font-family: "Poppins";
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: linear-gradient(145deg, #ff95d6, #a97bff, #53dfff);
+  background-size: 300% 300%;
+  animation: bgMove 11s ease infinite;
+}
+
+@keyframes bgMove {
+  0% { background-position: 10% 20%; }
+  50% { background-position: 90% 80%; }
+  100% { background-position: 10% 20%; }
+}
+
+.form-container {
+  width: 370px;
+  padding: 40px;
+  background: rgba(255,255,255,0.2);
+  border-radius: 22px;
+  backdrop-filter: blur(14px);
+  box-shadow: 0px 20px 40px rgba(0,0,0,0.2);
+  text-align: center;
+}
+
+h2 {
+  color: white;
+  font-size: 2.1rem;
+  margin-bottom: 20px;
+}
+
+input, select {
+  width: 90%;
+  padding: 12px;
+  margin: 10px 0;
+  border-radius: 12px;
+  border: none;
+  background: rgba(255,255,255,0.35);
+  color: white;
+  font-size: 1rem;
+}
+
+input::placeholder {
+  color: #efefef;
+}
+
+button {
+  width: 95%;
+  padding: 12px;
+  margin-top: 15px;
+  border-radius: 12px;
+  border: none;
+  background: white;
+  color: #6c00ff;
+  font-weight: 700;
+  cursor: pointer;
+  transition: .25s;
+}
+
+button:hover {
+  transform: translateY(-4px);
+  background: #f8f8f8;
+}
+
+#msg {
+  margin-top: 10px;
+  color: #fff;
+  font-weight: 600;
+}

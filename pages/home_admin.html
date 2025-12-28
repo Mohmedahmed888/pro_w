@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Admin Home</title>
+<link rel="stylesheet" href="home_admin.css">
+</head>
+<body>
+  <nav>
+    <button class="nav-btn active" data-tab="approval">Waiting for Approval</button>
+    <button class="nav-btn" data-tab="reviews">Mechanic Reviews</button>
+  </nav>
+
+  <div id="content">
+    <!-- Approval tab -->
+    <div class="tab" id="approval-tab">
+      <h2>Users Waiting for Approval</h2>
+      <div id="approval-list"></div>
+    </div>
+
+    <!-- Reviews tab -->
+    <div class="tab" id="reviews-tab" style="display:none;">
+      <h2>Mechanic Reviews</h2>
+      <div id="reviews-list"></div>
+    </div>
+  </div>
+
+<script src="home_admin.js" defer></script>
+</body>
+</html>

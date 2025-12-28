@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>User Home</title>
+<link rel="stylesheet" href="home_user.css">
+</head>
+<body>
+  <nav>
+    <button class="nav-btn active" data-tab="home">Home</button>
+    <button class="nav-btn" data-tab="requests">Requests</button>
+    <button class="nav-btn" data-tab="profile">Profile</button>
+  </nav>
+
+  <div id="content">
+    <!-- Home tab -->
+    <div class="tab" id="home-tab">
+      <h2>Nearest Mechanics</h2>
+      <div id="mechanic-list"></div>
+    </div>
+
+    <!-- Requests tab -->
+    <div class="tab" id="requests-tab" style="display:none;">
+      <h2>Your Requests</h2>
+      <div id="request-list"></div>
+    </div>
+
+    <!-- Profile tab -->
+    <div class="tab" id="profile-tab" style="display:none;">
+      <h2>Your Profile</h2>
+      <form id="profile-form">
+        <input id="profile-name" type="text" placeholder="Full Name" required>
+        <input id="profile-age" type="number" placeholder="Age">
+        <input id="profile-email" type="email" placeholder="Email" required readonly>
+        <input id="profile-phone" type="text" placeholder="Phone">
+        <input id="profile-vehicle" type="text" placeholder="Vehicle Type">
+        <button type="submit">Save</button>
+      </form>
+      <p id="profile-msg"></p>
+    </div>
+  </div>
+
+<script src="home_user.js" defer></script>
+</body>
+</html>
